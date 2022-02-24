@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-dev{
+            background: white;
+            width: 100px;
+            height: 100px;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+        }
+        .child-dev{
+            background: chartreuse;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            border-radius: 50%;
+            position: relative;
+            animation-name: square;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+            margin-left:-80px ;
+        
+        }
+        @keyframes square {
+            0% {
+                transform: translateY(0px) 
+                rotateY(0deg);
+                opacity: 1;
+                
+            }
+            
+            50% {
+                transform: translateY(-150px) 
+                rotateY(180deg);
+                opacity: 0;
+                
+            }
+           
+           
+            100% {
+                transform: translateY(-150px) 
+                rotateY(360deg);
+                opacity: 0;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-dev">
+        
+    </div>
+    <div class="child-dev">
+
+    </div>
+</body>
+</html>

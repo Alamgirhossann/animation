@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(./images/istockphoto-1287901429-170667a.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        body::before {
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            opacity: 0.4;
+            position: absolute;
+        }
+
+        h1 {
+            font-size: 55px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            text-align: center;
+            color: white;
+            transform: translate(-50%, -50%);
+        }
+        .earth::before{
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            opacity: 0.5;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .earth {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: url(./images/f0e1869820b56bcc79819dee3f35490e.jpg);
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: repeat-x;
+            box-shadow: inset 0 0 40px rgb(90, 11, 11),
+                0 0 30px #4069ff;
+            animation: earth 10s linear infinite;
+        }
+
+        @keyframes earth {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 247px 0;
+            }
+        }
+
+        .circle {
+            transform-style: preserve-3d;
+            animation: text-circle 12s linear infinite;
+        }
+
+        .circle span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+            color: slateblue;
+            font-size: 30px;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            padding: 2px 30px;
+            box-shadow: inset 0 0 0px rgb(90, 11, 11),
+                0 0 50px #0627a0;
+            transform: rotateY(calc(var(--i)* calc(360deg/ 30))) translateZ(250px);
+
+        }
+
+        @keyframes text-circle {
+            0% {
+                transform: perspective(1200px) rotateY(360deg) rotateX(15deg) rotateY(-30deg);
+            }
+
+            100% {
+                transform: perspective(1200px) rotateY(0deg) rotateX(15deg) rotateY(-30deg);
+            }
+        }
+
+        .circle-2 {
+            transform-style: preserve-3d;
+            animation: text-circle-2 9s linear infinite;
+        }
+
+        .circle-2 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(185, 116, 116);
+            color: slateblue;
+            font-size: 30px;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            padding: 2px 30px;
+            box-shadow: inset 0 0 0px rgb(90, 11, 11),
+                0 0 50px #0627a0;
+            transform: rotateY(calc(var(--i) * calc(360deg / 30))) translateZ(250px);
+
+        }
+
+        @keyframes text-circle-2 {
+            0% {
+                transform: perspective(1000px) rotateY(360deg) rotateX(30deg) rotateY(-45deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(0deg) rotateX(
+                
+                30deg) rotateY(-45deg);
+            }
+        }
+
+        .circle-3 {
+            transform-style: preserve-3d;
+            animation: text-circle-3 8s linear infinite;
+        }
+
+        .circle-3 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(180, 16, 16);
+            color: slateblue;
+            font-size: 30px;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            padding: 2px 40px;
+            box-shadow: inset 0 0 0px rgb(90, 11, 11),
+                0 0 50px #0627a0;
+            transform: rotateY(calc(var(--i) * calc(360deg / 30))) translateZ(250px);
+
+        }
+
+        @keyframes text-circle-3 {
+            0% {
+                transform: perspective(1000px) rotateY(360deg) rotateX(420deg) rotateY(-50deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(0deg) rotateX(40deg) rotateY(-77deg);
+            }
+        }
+
+        .circle-4 {
+            transform-style: preserve-3d;
+            animation: text-circle-4 5s alternate-reverse infinite;
+        }
+
+        .circle-4 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(18, 206, 11);
+            color: slateblue;
+            font-size: 30px;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            padding: 2px 40px;
+            box-shadow: inset 0 0 0px rgb(90, 11, 11),
+                0 0 50px #0627a0;
+            transform: rotateY(calc(var(--i) * calc(360deg / 30))) translateZ(250px);
+
+        }
+
+        @keyframes text-circle-4 {
+            0% {
+                transform: perspective(1000px) rotateY(360deg) rotateX(45deg) rotateY(-90deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(0deg) rotateX(45deg) rotateY(-90deg);
+            }
+        }
+
+        .circle-5 {
+            transform-style: preserve-3d;
+            animation: text-circle-5 20s linear infinite;
+        }
+
+        .circle-5 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(34, 6, 195);
+            color: slateblue;
+            font-size: 30px;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            padding: 2px 40px;
+            box-shadow: inset 0 0 0px rgb(90, 11, 11),
+                0 0 50px #0627a0;
+            transform: rotateY(calc(var(--i) * calc(360deg / 30))) translateZ(255px);
+
+        }
+
+        @keyframes text-circle-5 {
+            0% {
+                transform: perspective(1000px) rotateY(360deg) rotateX(35deg) rotateY(-45deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(0deg) rotateX(52deg) rotateY(-72deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section-2">
+
+        <div class="earth"></div>
+
+        <div class="circle">
+
+            <span style="--i:1"> </span>
+            <span style="--i:2"> </span>
+            <span style="--i:3"> </span>
+            <span style="--i:4"> </span>
+            <span style="--i:5"> </span>
+            <span style="--i:6"> </span>
+            <span style="--i:7"> </span>
+            <span style="--i:8"> </span>
+            <span style="--i:9"> </span>
+            <span style="--i:10"> </span>
+            <span style="--i:11"> </span>
+            <span style="--i:12"> </span>
+            <span style="--i:13"> </span>
+            <span style="--i:14"> </span>
+            <span style="--i:15"> </span>
+            <span style="--i:16"> </span>
+            <span style="--i:17"> </span>
+            <span style="--i:18"> </span>
+            <span style="--i:19"> </span>
+            <span style="--i:20"> </span>
+            <span style="--i:21"> </span>
+            <span style="--i:22"> </span>
+            <span style="--i:23"> </span>
+            <span style="--i:24"> </span>
+            <span style="--i:25"> </span>
+            <span style="--i:26"> </span>
+            <span style="--i:27"> </span>
+            <span style="--i:28"> </span>
+            <span style="--i:29"> </span>
+            <span style="--i:30"> </span>
+        </div>
+        <div class="circle-2">
+
+            <span style="--i:1"> </span>
+            <span style="--i:2"> </span>
+            <span style="--i:3"> </span>
+            <span style="--i:4"> </span>
+            <span style="--i:5"> </span>
+            <span style="--i:6"> </span>
+            <span style="--i:7"> </span>
+            <span style="--i:8"> </span>
+            <span style="--i:9"> </span>
+            <span style="--i:10"> </span>
+            <span style="--i:11"> </span>
+            <span style="--i:12"> </span>
+            <span style="--i:13"> </span>
+            <span style="--i:14"> </span>
+            <span style="--i:15"> </span>
+            <span style="--i:16"> </span>
+            <span style="--i:17"> </span>
+            <span style="--i:18"> </span>
+            <span style="--i:19"> </span>
+            <span style="--i:20"> </span>
+            <span style="--i:21"> </span>
+            <span style="--i:22"> </span>
+            <span style="--i:23"> </span>
+            <span style="--i:24"> </span>
+            <span style="--i:25"> </span>
+            <span style="--i:26"> </span>
+            <span style="--i:27"> </span>
+            <span style="--i:28"> </span>
+            <span style="--i:29"> </span>
+            <span style="--i:30"> </span>
+        </div>
+        <!-- <div class="circle-3">
+
+            <span style="--i:1"> </span>
+            <span style="--i:2"> </span>
+            <span style="--i:3"> </span>
+            <span style="--i:4"> </span>
+            <span style="--i:5"> </span>
+            <span style="--i:6"> </span>
+            <span style="--i:7"> </span>
+            <span style="--i:8"> </span>
+            <span style="--i:9"> </span>
+            <span style="--i:10"> </span>
+            <span style="--i:11"> </span>
+            <span style="--i:12"> </span>
+            <span style="--i:13"> </span>
+            <span style="--i:14"> </span>
+            <span style="--i:15"> </span>
+            <span style="--i:16"> </span>
+            <span style="--i:17"> </span>
+            <span style="--i:18"> </span>
+            <span style="--i:19"> </span>
+            <span style="--i:20"> </span>
+            <span style="--i:21"> </span>
+            <span style="--i:22"> </span>
+            <span style="--i:23"> </span>
+            <span style="--i:24"> </span>
+            <span style="--i:25"> </span>
+            <span style="--i:26"> </span>
+            <span style="--i:27"> </span>
+            <span style="--i:28"> </span>
+            <span style="--i:29"> </span>
+            <span style="--i:30"> </span>
+        </div> -->
+        <!-- <div class="circle-4">
+
+            <span style="--i:1"> </span>
+            <span style="--i:2"> </span>
+            <span style="--i:3"> </span>
+            <span style="--i:4"> </span>
+            <span style="--i:5"> </span>
+            <span style="--i:6"> </span>
+            <span style="--i:7"> </span>
+            <span style="--i:8"> </span>
+            <span style="--i:9"> </span>
+            <span style="--i:10"> </span>
+            <span style="--i:11"> </span>
+            <span style="--i:12"> </span>
+            <span style="--i:13"> </span>
+            <span style="--i:14"> </span>
+            <span style="--i:15"> </span>
+            <span style="--i:16"> </span>
+            <span style="--i:17"> </span>
+            <span style="--i:18"> </span>
+            <span style="--i:19"> </span>
+            <span style="--i:20"> </span>
+            <span style="--i:21"> </span>
+            <span style="--i:22"> </span>
+            <span style="--i:23"> </span>
+            <span style="--i:24"> </span>
+            <span style="--i:25"> </span>
+            <span style="--i:26"> </span>
+            <span style="--i:27"> </span>
+            <span style="--i:28"> </span>
+            <span style="--i:29"> </span>
+            <span style="--i:30"> </span>
+        </div> -->
+    </section>
+    <h1>Welcome to <br> Salah Seif"s Creative World</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .main-div{
+            padding: 100px;
+        }
+        .child-div{
+            border: 2px solid cyan;
+            background: rgb(131, 133, 129);
+            margin: 15px 0px;
+            color: white;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 300px;
+        }
+        .head{
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <p class="head">Scrolling Animation</p>
+        <div class="child-div"  
+        data-aos="fade-up"
+        data-aos-offset="20"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="fade-up" data-aos-offset="200"
+        data-aos-delay="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="fade-right" data-aos-offset="200"
+        data-aos-delay="50" data-aos-easing="ease-in-out-cubic">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="flip-left" data-aos-offset="200"
+        data-aos-delay="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="fade-up-left" data-aos-offset="200"
+        data-aos-delay="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="flip-up" data-aos-offset="200"
+        data-aos-delay="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+        <div class="child-div" data-aos="flip-left" data-aos-offset="200"
+        data-aos-delay="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque unde maxime quibusdam eveniet aliquam nesciunt similique autem adipisci natus!</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
